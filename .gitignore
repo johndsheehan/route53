@@ -1,0 +1,10 @@
+*
+!.gitignore
+!README.rst
+!config
+!credentials
+!crontab
+!Dockerfile
+!README.rst
+!route53
+!route53.env
