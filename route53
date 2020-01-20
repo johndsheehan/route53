@@ -2,7 +2,7 @@
 
 # from https://willwarren.com/2014/07/03/roll-dynamic-dns-service-using-amazon-route53/
 
-source /route53.env
+source /root/.env/route53.env
 
 if [ -z "$RECORDSET" ] ; then
     echo RECORDSET env variable not set

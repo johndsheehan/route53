@@ -14,6 +14,6 @@ Requirements
 Quickstart
 ==========
 
-- populate ``config``, ``credentials``, ``route53.env``
+- populate ``aws/config``, ``aws/credentials``, ``env/route53.env``
 - ``docker build -t route53:latest .``
-- ``docker run  --name route53  --rm  route53:latest``
+- ``docker run  --name route53  --rm  -v /full/path/to/route53/aws/:/root/.aws  -v /full/path/to/route53/env/:/root/.env  route53:latest``

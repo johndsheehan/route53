@@ -1,5 +1,10 @@
 *
 !.gitignore
+!aws
+!aws/config
+!aws/credentials
+!env
+!env/route53.env
 !README.rst
 !crontab
 !Dockerfile

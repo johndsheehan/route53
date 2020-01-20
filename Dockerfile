@@ -6,9 +6,7 @@ RUN apt-get update  \
 &&  python3 -m pip install awscli  \
 &&  mkdir /root/.aws
 
-COPY config  credentials  /root/.aws/
 COPY crontab  /etc/crontab
 COPY route53  /route53
-COPY route53.env  /route53.env
 
 CMD ["cron", "-f"]
